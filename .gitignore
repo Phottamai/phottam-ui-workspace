@@ -1,0 +1,15 @@
+# Cloned repositories (each maintains its own independent Git history)
+repos/
+
+# Dependencies & tooling
+node_modules/
+*.log
+
+# OS & editor junk
+.DS_Store
+Thumbs.db
+
+# Local environment overrides
+.env
+.env.local
+.workspace-local.json

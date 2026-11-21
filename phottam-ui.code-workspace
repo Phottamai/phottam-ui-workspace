@@ -1,0 +1,42 @@
+{
+  "folders": [
+    {
+      "name": "phottam-ui-workspace (root)",
+      "path": "."
+    },
+    {
+      "name": "phottam-website",
+      "path": "repos/phottam-website"
+    },
+    {
+      "name": "phottam-web",
+      "path": "repos/phottam-web"
+    },
+    {
+      "name": "phottam-b2b-pwa",
+      "path": "repos/phottam-b2b-pwa"
+    },
+    {
+      "name": "phottam-b2c",
+      "path": "repos/phottam-b2c"
+    },
+    {
+      "name": "phottam-platform-kit",
+      "path": "repos/phottam-platform-kit"
+    },
+    {
+      "name": "phottam-desktop",
+      "path": "repos/phottam-desktop"
+    }
+  ],
+  "settings": {
+    "git.openRepositoryInParentFolders": "always",
+    "git.autofetch": false,
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.next": true,
+      "**/build": true
+    }
+  }
+}

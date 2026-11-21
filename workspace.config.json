@@ -1,0 +1,93 @@
+{
+  "reposDir": "repos",
+  "repoAgentsDir": "repo-agents",
+  "ignoreStrategy": "gitignore",
+  "agentFrameworks": {
+    "antigravity": {
+      "label": "Antigravity",
+      "description": ".agents/ (rules, skills, workflows) + AGENTS.md",
+      "paths": [
+        ".agents",
+        "AGENTS.md"
+      ]
+    },
+    "claude": {
+      "label": "Claude Code",
+      "description": "CLAUDE.md, .claude/ (agents, skills, projected rules) + AGENTS.md",
+      "paths": [
+        ".claude",
+        "CLAUDE.md",
+        "AGENTS.md"
+      ],
+      "projectRulesTo": ".claude/rules",
+      "projectRulesFormat": "claude",
+      "projectSkillsTo": ".claude/skills"
+    },
+    "copilot": {
+      "label": "GitHub Copilot",
+      "description": ".github/copilot-instructions.md, .github/{agents,instructions,skills}/ + AGENTS.md",
+      "paths": [
+        ".github/copilot-instructions.md",
+        ".github/agents",
+        ".github/instructions",
+        "AGENTS.md"
+      ],
+      "projectRulesTo": ".github/instructions",
+      "projectRulesFormat": "copilot",
+      "projectSkillsTo": ".github/skills"
+    },
+    "cursor": {
+      "label": "Cursor",
+      "description": ".cursor/rules/ (projected), .agents/skills/ + AGENTS.md",
+      "paths": [
+        ".agents/skills",
+        "AGENTS.md"
+      ],
+      "projectRulesTo": ".cursor/rules",
+      "projectRulesFormat": "cursor"
+    }
+  },
+  "agentSyncPaths": [
+    ".github/copilot-instructions.md",
+    ".github/agents",
+    ".github/instructions",
+    ".claude",
+    "CLAUDE.md",
+    ".agents",
+    "AGENTS.md"
+  ],
+  "repos": [
+    {
+      "name": "phottam-website",
+      "url": "https://github.com/Phottamai/phottam-website.git"
+    },
+    {
+      "name": "phottam-web",
+      "url": "https://github.com/Phottamai/phottam-web.git"
+    },
+    {
+      "name": "phottam-b2b-pwa",
+      "url": "https://github.com/Phottamai/phottam-b2b-pwa.git"
+    },
+    {
+      "name": "phottam-b2c",
+      "url": "https://github.com/Phottamai/phottam-b2c.git"
+    },
+    {
+      "name": "phottam-platform-kit",
+      "url": "https://github.com/Phottamai/phottam-platform-kit.git",
+      "excludePaths": [
+        ".agents/rules/phottam-web-code-style.md",
+        ".agents/rules/nextjs-16.md"
+      ]
+    },
+    {
+      "name": "phottam-desktop",
+      "url": "https://github.com/Phottamai/phottam-desktop.git",
+      "excludePaths": [
+        ".agents/rules/phottam-web-code-style.md",
+        ".agents/rules/nextjs-16.md"
+      ]
+    }
+  ]
+}

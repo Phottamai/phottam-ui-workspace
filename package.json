@@ -1,0 +1,19 @@
+{
+  "name": "phottam-ui-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-repo workspace and centralized AI agent context manager for Phottam UI repositories.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "setup": "node scripts/clone.mjs && node scripts/sync.mjs",
+    "clone": "node scripts/clone.mjs",
+    "sync": "node scripts/sync.mjs",
+    "pull": "node scripts/pull.mjs",
+    "status": "node scripts/status.mjs",
+    "checkout": "node scripts/checkout.mjs",
+    "clean:agents": "node scripts/clean-agents.mjs"
+  }
+}
